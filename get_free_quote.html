@@ -31,6 +31,12 @@
 				font-family: 'Roboto Slab', serif;
 			}
 			/*----------------------------------------*/
+			@media(min-width:900px){
+				.max-w-800{
+					max-width: 800px;
+				}
+			}
+			/*----------------------------------------*/
 			@media(min-width:1320px){
 				.max-w-1244{
 					max-width: 1244px;
@@ -141,118 +147,91 @@
 				<!----->
 				<div class="max-w-1244 mx-auto text-white text-center flex items-center justify-center px-5 mt-20 py-8 sm:px-10 lg:px-20 2xl:px-0">
 					<div>
-						<h1 class=" md:text-4xl text-3xl font-extrabold font-jost">Get Answers</h1>
-						<p class="font-robotoslab font-medium text-base mt-3 tracking-wider"><a href="home.html">Home</a> · FAQ’s</p>
+						<h1 class=" md:text-4xl text-3xl font-extrabold font-jost">Get Free Quote</h1>
+						<p class="font-robotoslab font-medium text-base mt-3 tracking-wider"><a href="home.html">Home</a> · Get Free Quote</p>
 					</div>
 				</div>
 			</section>
 			<!-----=====Sec 002=======----->
 			<section>
-				<!---->
-				<div class="max-w-1244 mx-auto py-20 font-inter grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-4 sm:px-10 lg:px-20 2xl:px-0 px-5">
+				<!--Hero text--->
+				<div class=" text-center py-16">
 					<!---->
-					<div class=" relative text-gray-500">
-						<input aria-label="form" class="block w-full rounded-full p-4 text-sm  placeholder-gray-500 border focus:outline-none" type="search" placeholder="Write Keyword">
-						<span class=" absolute top-4 right-4">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-							<path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-							</svg>
-						</span>
-					</div>
+					<p class="text-orrange-500 md:text-lg text-sm font-semibold font-inter mb-3 ">Get Free Quote</p>
 					<!---->
-					<div class=" relative text-gray-500">
-						<select value="Select Category" class="block text-left w-full font-medium rounded-full p-4 text-sm text-gray-800 bg-white border focus:outline-none appearance-none">
-							<option selected disabled hidden>Select Category</option>
-							<option>Option 1</option>
-							<option>Option 2</option>
-						</select>
-						<span class=" absolute top-4 right-4">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-							<path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-							</svg>
-						</span>
-					</div>
-					<!---->
-					<div class=" relative text-gray-500">
-						<input aria-label="form" class="block w-full font-semibold rounded-full p-4 text-sm text-white linear-gradient-orrange border focus:outline-none" type="button" value="Search By Filter">
-					</div>
+					<h1 class="md:text-5xl text-3xl font-bold font-jost">Tell Us About Your Project</h1>
 				</div>
-				<!---->
-				<div class="max-w-1244 mx-auto pb-20 grid lg:grid-cols-2 grid-cols-1 md:gap-8 gap-4 sm:px-10 lg:px-20 2xl:px-0 px-5">
-					<!---->
-					<div>
-						<!--001-->
-						<div class=" flex items-center bg-white p-4 px-5 mb-4 shadow-lg">
-							<span class="w-9 h-9 linear-gradient-orrange rounded-full mr-3 text-white md:flex hidden items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
-								</svg>
-							</span>
-							<p class="md:text-base text-sm font-medium text-gray-800">Can i use this product before purchase?</p>
-						</div>
-						<!--002-->
-						<div class="bg-white p-4 px-5 mb-4 shadow-lg">
-							<!---->
-							<div class=" flex items-center">
-								<span class="w-9 h-9 linear-gradient-orrange rounded-full mr-3 text-white md:flex hidden items-center justify-center">
-									<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
-									</svg>
-								</span>
-								<p class="md:text-base text-sm font-medium text-gray-800">What is your marketing campaign execution process?</p>
+				<!------>
+				<div class="max-w-800 mx-auto pb-20 sm:px-10 lg:px-20 2xl:px-0 px-5">
+					<!----->
+					<form action="#">
+						<!-----Name----->
+						<div class="2xl:mb-6 mb-4">
+							<label class="block text-sm font-medium text-gray-800">Your Name</label>
+							<div class=" grid md:grid-cols-2 grid-cols-1 gap-4 mt-2">
+								<!----->
+								<input aria-label="form" type="text" name="first-name" id="first-name" placeholder="First Name*" required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
+								<!----->
+								<input aria-label="form" type="text" name="last-name" id="last-name" placeholder="Last Name*" required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
 							</div>
-							<!---->
-							<p class=" md:text-sm text-xs text-gray-800 py-3 xl:pr-8">We build, web-based reporting dashboards that act as a single client portal from which all of your digital marketing analytics are reported, giving you 24/7 access to campaign performance.</p>
 						</div>
-						<!--003-->
-						<div class=" flex items-center bg-white p-4 px-5 mb-4 shadow-lg">
-							<span class="w-9 h-9 linear-gradient-orrange rounded-full mr-3 text-white md:flex hidden items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
-								</svg>
-							</span>
-							<p class="md:text-base text-sm font-medium text-gray-800">Can i use this product before purchase?</p>
+						<!-----Your Contact Information----->
+						<div class="2xl:mb-6 mb-4">
+							<label class="block text-sm font-medium text-gray-800">Your Contact Information</label>
+							<div class=" grid md:grid-cols-2 grid-cols-1 gap-4 mt-2">
+								<!----->
+								<input aria-label="form" type="email" name="email" id="email" placeholder="Email Address*" required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
+								<!----->
+								<input aria-label="form" type="text" name="phone" id="phone" placeholder="Phone*" required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
+								<!----->
+								<input aria-label="form" type="text" name="callus" id="callus" placeholder="Do you have a preferred time for us to call?" class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400 md:col-span-2">
+							</div>
 						</div>
-					</div>
-					<!---->
-					<div>
-						<!--001-->
-						<div class=" flex items-center bg-white p-4 px-5 mb-4 shadow-lg">
-							<span class="w-9 h-9 linear-gradient-orrange rounded-full mr-3 text-white md:flex hidden items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
-								</svg>
-							</span>
-							<p class="md:text-base text-sm font-medium text-gray-800">Can i use this product before purchase?</p>
+						<!-----Where is the project located?----->
+						<div class="2xl:mb-6 mb-4">
+							<label class="block text-sm font-medium text-gray-800">Where is the project located?</label>
+							<div class=" grid md:grid-cols-3 grid-cols-1 gap-4 mt-2">
+								<!----->
+								<input aria-label="form" type="email" name="city" id="city" placeholder="City*" required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
+								<!----->
+								<input aria-label="form" type="email" name="state" id="state" placeholder="State*" required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
+								<!----->
+								<input aria-label="form" type="email" name="zip_code" id="zip_code" placeholder="Zip Code*" required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
+								<!----->
+								<input aria-label="form" type="text" name="address1" id="address1" placeholder="Project Address Line 1*" required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400 md:col-span-3">
+								<!----->
+								<input aria-label="form" type="text" name="address2" id="address2" placeholder="Project Address Line 2*" required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400 md:col-span-3">
+							</div>
 						</div>
-						<!--003-->
-						<div class=" flex items-center bg-white p-4 px-5 mb-4 shadow-lg">
-							<span class="w-9 h-9 linear-gradient-orrange rounded-full mr-3 text-white md:flex hidden items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
-								</svg>
-							</span>
-							<p class="md:text-base text-sm font-medium text-gray-800">What is your marketing campaign execution process?</p>
+						<!-----Please describe the project in your own words.*----->
+						<div class="2xl:mb-6 mb-4">
+							<label for="message" class="block text-sm font-medium text-gray-800">Please describe the project in your own words.*</label>
+							<!----->
+							<textarea name="message" id="message" placeholder="Tell us about your project" required class="p-3 mt-2 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400 col-span-2 h-20 resize-none"></textarea>
 						</div>
-						<!--001-->
-						<div class=" lg:flex hidden items-center bg-white p-4 px-5 mb-4 shadow-lg">
-							<span class="w-9 h-9 linear-gradient-orrange rounded-full mr-3 text-white md:flex hidden items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
-								</svg>
-							</span>
-							<p class="md:text-base text-sm font-medium text-gray-800">Can i use this product before purchase?</p>
+						<!-----Do you have professional designs or drawings for the project?----->
+						<div class="2xl:mb-6 mb-4">
+							<label class="block text-sm font-medium text-gray-800">Do you have professional designs or drawings for the project?</label>
+							<select id="project1" name="project1"  class="p-3 mt-2 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
+								<option>Select one...</option>
+								<option>Select two...</option>
+								<option>Select three...</option>
+								</select>
 						</div>
-						<!--003-->
-						<div class=" lg:flex hidden items-center bg-white p-4 px-5 mb-4 shadow-lg">
-							<span class="w-9 h-9 linear-gradient-orrange rounded-full mr-3 text-white md:flex hidden items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
-								</svg>
-							</span>
-							<p class="md:text-base text-sm font-medium text-gray-800">Can i use this product before purchase?</p>
+						<!-----What is your approximate project budget?----->
+						<div class="2xl:mb-6 mb-4">
+							<label class="block text-sm font-medium text-gray-800">What is your approximate project budget?</label>
+							<select id="project2" name="project2"  class="p-3 mt-2 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
+								<option>Select one...</option>
+								<option>Select two...</option>
+								<option>Select three...</option>
+								</select>
 						</div>
-					</div>
+						<!--button--->
+						<div class="mt-4">
+							<a class="w-full text-sm block text-center font-semibold py-4  linear-gradient-orrange text-white rounded-md" href="#">Submit</a>
+						</div>
+					</form>
 				</div>
 			</section>
 		</main>
